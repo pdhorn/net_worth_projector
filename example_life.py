@@ -10,11 +10,11 @@ if __name__ == "__main__":
     start = Month(2023,9)
     end = Month(2043,9)
     assets = [
-            Asset("roth_ira", 200000, investment_return_rate, "post"), # 200k initial balance in roth ira
-            Asset("401k", 125000, investment_return_rate, "post"), # 125k initial balance in 401k
-            Asset("college", 113000, investment_return_rate, "pre"), # 113k initial college savings
-            Asset("house", 300000, 0.05, "pre"), # house worth 300k
-            Asset("after_house", 0, investment_return_rate, "pre"), # initialize 0 balance account for saving after house paid fof
+            Asset("roth_ira", 200000, investment_return_rate, "roth"), # 200k initial balance in roth ira
+            Asset("401k", 125000, investment_return_rate, "roth"), # 125k initial balance in 401k
+            Asset("college", 113000, investment_return_rate, "pre_tax"), # 113k initial college savings
+            Asset("house", 300000, 0.05, "after_tax"), # house worth 300k
+            Asset("after_house", 0, investment_return_rate, "after_tax"), # initialize 0 balance account for saving after house paid fof
     ]
     asset_dict = {a.name: a for a in assets}
     transactions = [

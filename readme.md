@@ -2,6 +2,8 @@
 
 This utility lets you setup some assets, contributions, changes in contributions, and let you estimate your net worth over time. It's useful to compare various scenarios like, "How much more will I have at retirement if I invest my house payment after I pay it off?"
 
+Investments are broken into three buckets: pre-tax (e.g. tradiitonal 401k), roth (e.g. roth IRA), and after-tax (e.g. regular brokerage account).
+
 ### install
 virtualenv:
 - `python -m venv venv`

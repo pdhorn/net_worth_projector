@@ -2,3 +2,4 @@
 */__pycache__
 my_*.py
 *.pyc
+.DS_Store
